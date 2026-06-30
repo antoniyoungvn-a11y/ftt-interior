@@ -1,0 +1,3216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FTT Interior | 越南精品室內設計</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #C8A97E;
+  --primary-light: #D9BF9A;
+  --primary-dark: #A8845A;
+  --bg: #F8F8F8;
+  --text: #111111;
+  --accent: #000000;
+  --white: #FFFFFF;
+  --gray-100: #F0F0F0;
+  --gray-200: #E0E0E0;
+  --gray-300: #CCCCCC;
+  --gray-500: #888888;
+  --gray-700: #444444;
+  --dark-bg: #0D0D0D;
+  --dark-card: #1A1A1A;
+  --glass-bg: rgba(255,255,255,0.12);
+  --glass-border: rgba(255,255,255,0.2);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.12);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.18);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.2;
+}
+
+a { text-decoration: none; color: inherit; }
+
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.section-title.light { color: var(--white); }
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--gray-500);
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+
+.text-center { text-align: center; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200,169,126,0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.6);
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: var(--white);
+}
+
+.btn-dark {
+  background: var(--accent);
+  color: var(--white);
+}
+.btn-dark:hover {
+  background: var(--gray-700);
+  transform: translateY(-2px);
+}
+
+/* ===== HEADER ===== */
+#header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  transition: var(--transition);
+  padding: 20px 0;
+}
+
+#header.scrolled {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 12px 0;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  width: 44px;
+  height: 44px;
+  background: var(--primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -1px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+  transition: var(--transition);
+}
+
+#header.scrolled .logo-name { color: var(--text); }
+
+.logo-tagline {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  transition: var(--transition);
+}
+
+#header.scrolled .logo-tagline { color: var(--gray-500); }
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.05em;
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+.nav-link:hover::after { transform: scaleX(1); }
+.nav-link:hover { color: var(--primary-light); }
+#header.scrolled .nav-link { color: var(--gray-700); }
+#header.scrolled .nav-link:hover { color: var(--primary); }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 100px;
+  padding: 4px;
+  transition: var(--transition);
+}
+
+#header.scrolled .lang-switcher {
+  background: var(--gray-100);
+}
+
+.lang-btn {
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  transition: var(--transition);
+  letter-spacing: 0.05em;
+}
+
+#header.scrolled .lang-btn { color: var(--gray-500); }
+
+.lang-btn.active {
+  background: var(--primary);
+  color: var(--white) !important;
+}
+
+.lang-btn:hover:not(.active) { color: var(--white); }
+#header.scrolled .lang-btn:hover:not(.active) { color: var(--text); }
+
+.header-cta {
+  font-size: 0.825rem;
+  padding: 10px 22px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  transition: var(--transition);
+  border-radius: 2px;
+}
+
+#header.scrolled .hamburger span { background: var(--text); }
+
+/* ===== HERO ===== */
+#hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  transition: transform 8s ease;
+}
+
+.hero-bg.loaded { transform: scale(1); }
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.75) 0%,
+    rgba(0,0,0,0.45) 50%,
+    rgba(0,0,0,0.3) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 120px 0 80px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(200,169,126,0.2);
+  border: 1px solid rgba(200,169,126,0.4);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  color: var(--primary-light);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.hero-title span { color: var(--primary-light); }
+
+.hero-sub {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  color: rgba(255,255,255,0.8);
+  max-width: 600px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 900px;
+}
+
+.hero-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  transition: var(--transition);
+}
+
+.hero-card:hover {
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-4px);
+}
+
+.hero-card-icon {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.hero-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-light);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hero-card-sub {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.05em;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+  animation: scrollLine 2s ease infinite;
+}
+
+@keyframes scrollLine {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* ===== ABOUT ===== */
+#about {
+  padding: 120px 0;
+  background: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-content { order: 1; }
+.about-image-wrap { order: 2; }
+
+.about-image-wrap {
+  position: relative;
+  isolation: isolate;
+}
+
+.about-img {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.about-img {
+  position: relative;
+  z-index: 1;
+}
+
+.about-img-accent {
+  position: absolute;
+  bottom: -24px;
+  left: -24px;
+  width: 180px;
+  height: 180px;
+  background: var(--primary);
+  border-radius: var(--radius-md);
+  z-index: 0;
+}
+
+.about-stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-badge {
+  flex: 1;
+  min-width: 100px;
+  background: var(--gray-100);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  transition: var(--transition);
+}
+
+.stat-badge:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 4px;
+  letter-spacing: 0.05em;
+}
+
+.about-text {
+  color: var(--gray-700);
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.about-features {
+  list-style: none;
+  margin: 24px 0;
+}
+
+.about-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.about-features li::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: var(--primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ===== SERVICES ===== */
+#services {
+  padding: 120px 0;
+  background: var(--bg);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 36px 28px;
+  border: 1px solid var(--gray-200);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.service-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+/* ===== WHY US ===== */
+#why {
+  padding: 120px 0;
+  background: var(--dark-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+#why::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,169,126,0.08) 0%, transparent 70%);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 56px;
+}
+
+.why-card {
+  background: var(--dark-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-md);
+  padding: 36px 32px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition);
+}
+
+.why-card:hover {
+  border-color: rgba(200,169,126,0.2);
+  transform: translateY(-6px);
+}
+
+.why-card:hover::after { transform: scaleX(1); }
+
+.why-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(200,169,126,0.1);
+  border: 1px solid rgba(200,169,126,0.2);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.why-card:hover .why-icon {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.why-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.why-desc {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+}
+
+/* ===== PORTFOLIO ===== */
+#portfolio {
+  padding: 120px 0;
+  background: var(--bg);
+}
+
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 24px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border: 1.5px solid var(--gray-200);
+  background: transparent;
+  color: var(--gray-500);
+  transition: var(--transition);
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  transition: opacity 0.25s ease;
+}
+
+.portfolio-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 4/3;
+  cursor: pointer;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.portfolio-item:hover img { transform: scale(1.08); }
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+  opacity: 0;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px;
+}
+
+.portfolio-item:hover .portfolio-overlay { opacity: 1; }
+
+.portfolio-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  margin-bottom: 6px;
+}
+
+.portfolio-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.portfolio-meta {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* ===== BEFORE AFTER ===== */
+#before-after {
+  padding: 120px 0;
+  background: var(--white);
+}
+
+.ba-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ba-slider-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  user-select: none;
+  cursor: col-resize;
+  box-shadow: var(--shadow-lg);
+}
+
+.ba-before, .ba-after {
+  position: absolute;
+  inset: 0;
+}
+
+.ba-before img, .ba-after img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ba-after {
+  clip-path: inset(0 50% 0 0);
+  transition: clip-path 0.05s linear;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: var(--white);
+  z-index: 10;
+  transition: left 0.05s linear;
+}
+
+.ba-handle-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.ba-label {
+  position: absolute;
+  bottom: 20px;
+  padding: 6px 14px;
+  background: rgba(0,0,0,0.6);
+  color: var(--white);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  backdrop-filter: blur(8px);
+}
+
+.ba-label.before { left: 20px; }
+.ba-label.after { right: 20px; }
+
+/* ===== PROCESS ===== */
+#process {
+  padding: 120px 0;
+  background: var(--bg);
+}
+
+.process-timeline {
+  position: relative;
+  margin-top: 64px;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), rgba(200,169,126,0.1));
+  transform: translateX(-50%);
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.process-step:nth-child(even) .process-text { order: 3; text-align: left; }
+.process-step:nth-child(even) .process-spacer { order: 2; }
+.process-step:nth-child(even) .process-empty { order: 1; }
+.process-step:nth-child(odd) .process-text { text-align: right; }
+
+.process-node {
+  display: flex;
+  justify-content: center;
+}
+
+.process-dot {
+  width: 56px;
+  height: 56px;
+  background: var(--white);
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  position: relative;
+  z-index: 2;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.process-step:hover .process-dot {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.process-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  transition: var(--transition);
+}
+
+.process-step:hover .process-card {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.process-step-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.process-step-desc {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+.process-empty { visibility: hidden; }
+
+/* ===== VIDEO ===== */
+#video-section {
+  padding: 120px 0;
+  background: var(--dark-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+}
+
+.video-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.play-btn {
+  width: 88px;
+  height: 88px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 32px;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 0 0 0 rgba(200,169,126,0.4);
+  animation: playPulse 2.5s infinite;
+  border: none;
+}
+
+@keyframes playPulse {
+  0% { box-shadow: 0 0 0 0 rgba(200,169,126,0.4); }
+  70% { box-shadow: 0 0 0 24px rgba(200,169,126,0); }
+  100% { box-shadow: 0 0 0 0 rgba(200,169,126,0); }
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  background: var(--primary-dark);
+}
+
+.play-btn svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--white);
+  margin-left: 4px;
+}
+
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal-inner {
+  width: 90vw;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.video-modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--radius-md);
+}
+
+.video-close {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.video-close:hover { background: rgba(255,255,255,0.1); }
+
+/* ===== STATS ===== */
+#stats {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 48px 32px;
+  border-right: 1px solid var(--gray-200);
+  position: relative;
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+.stat-item:hover::after { transform: scaleX(1); }
+
+.stat-count {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-unit {
+  font-size: 2rem;
+}
+
+.stat-desc {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  letter-spacing: 0.05em;
+}
+
+/* ===== TESTIMONIALS ===== */
+#testimonials {
+  padding: 120px 0;
+  background: var(--gray-100);
+  overflow: hidden;
+}
+
+.testimonials-slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: 48px;
+}
+
+.testimonials-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.testimonial-slide {
+  min-width: 100%;
+  padding: 0 16px;
+}
+
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  max-width: 760px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.testimonial-quote {
+  position: absolute;
+  top: 28px;
+  left: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem;
+  color: var(--primary);
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  color: var(--gray-700);
+  line-height: 1.9;
+  margin-bottom: 28px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+}
+
+.testimonial-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.testimonial-role {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.slider-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gray-300);
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--gray-500);
+  transition: var(--transition);
+}
+
+.slider-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.slider-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gray-300);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.slider-dot.active {
+  background: var(--primary);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* ===== FAQ ===== */
+#faq {
+  padding: 120px 0;
+  background: var(--white);
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 48px auto 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  text-align: left;
+  gap: 16px;
+  transition: var(--transition);
+}
+
+.faq-question:hover { color: var(--primary); }
+
+.faq-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition);
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.faq-item.open .faq-icon {
+  background: var(--primary);
+  color: var(--white);
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.faq-item.open .faq-answer { max-height: 300px; }
+
+.faq-answer-inner {
+  padding: 0 0 24px;
+  font-size: 0.925rem;
+  color: var(--gray-500);
+  line-height: 1.85;
+}
+
+/* ===== CONTACT ===== */
+#contact {
+  padding: 120px 0;
+  background: var(--bg);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.contact-info p {
+  font-size: 0.925rem;
+  color: var(--gray-500);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-icon-wrap {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  color: var(--white);
+}
+
+.contact-item-text {
+  font-size: 0.9rem;
+}
+
+.contact-item-label {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2px;
+}
+
+.contact-item-value {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.contact-form {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-md);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text);
+  background: var(--bg);
+  transition: var(--transition);
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(200,169,126,0.12);
+}
+
+.form-control.error { border-color: #e74c3c; }
+
+.form-error {
+  font-size: 0.75rem;
+  color: #e74c3c;
+  margin-top: 4px;
+  display: none;
+}
+
+.form-error.visible { display: block; }
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+select.form-control { cursor: pointer; }
+
+.form-submit {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+}
+
+/* ===== MAP ===== */
+#map {
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ===== CTA BANNER ===== */
+#cta-banner {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--accent) 0%, #2a2a2a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,169,126,0.1);
+}
+
+#cta-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -150px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,169,126,0.08);
+}
+
+.cta-banner-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.cta-banner-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.cta-banner-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 560px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+/* ===== FLOATING BUTTONS ===== */
+.float-btns {
+  position: fixed;
+  right: 24px;
+  bottom: 40px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.float-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 100px;
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: var(--transition);
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 52px;
+}
+
+.float-btn:hover {
+  max-width: 180px;
+  padding: 10px 20px;
+}
+
+.float-btn-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.float-btn.line { background: #06C755; }
+.float-btn.zalo { background: #0068FF; }
+.float-btn.wechat { background: #07C160; }
+.float-btn.phone { background: var(--primary); }
+
+.float-label {
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.float-btn:hover .float-label { opacity: 1; }
+
+/* ===== FOOTER ===== */
+#footer {
+  background: var(--accent);
+  color: rgba(255,255,255,0.7);
+  padding: 80px 0 32px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+.footer-brand .logo-name { color: var(--white); }
+.footer-brand .logo-tagline { color: rgba(255,255,255,0.4); }
+
+.footer-desc {
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.5);
+  margin: 20px 0 24px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.social-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.footer-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--primary-light);
+  padding-left: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-contact-item span:first-child { flex-shrink: 0; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  nav { display: none; }
+  .header-cta { display: none; }
+  .hamburger { display: flex; }
+  .hero-cards { grid-template-columns: repeat(2, 1fr); }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-image-wrap { order: -1; }
+  .about-img { height: 360px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-form { padding: 28px; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .process-timeline::before { left: 28px; }
+  .process-step { grid-template-columns: 56px 1fr; gap: 16px; }
+  .process-step:nth-child(even) .process-text { order: 2; text-align: left; }
+  .process-step .process-empty { display: none; }
+  .process-step .process-node { order: 1; justify-content: flex-start; }
+  .process-step .process-text { order: 2; text-align: left !important; }
+  .process-step:nth-child(odd) .process-text { text-align: left; }
+  .hero-ctas { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  .hero-cards { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .testimonial-card { padding: 28px; }
+  .float-btn { max-width: 44px; }
+}
+
+/* ===== AOS Animations ===== */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+[data-aos="fade-left"] { transform: translateX(40px); }
+[data-aos="fade-left"].aos-animate { transform: translateX(0); }
+[data-aos="fade-right"] { transform: translateX(-40px); }
+[data-aos="fade-right"].aos-animate { transform: translateX(0); }
+[data-aos="zoom-in"] { transform: scale(0.9); }
+[data-aos="zoom-in"].aos-animate { transform: scale(1); }
+[data-aos-delay="100"].aos-animate { transition-delay: 0.1s; }
+[data-aos-delay="200"].aos-animate { transition-delay: 0.2s; }
+[data-aos-delay="300"].aos-animate { transition-delay: 0.3s; }
+[data-aos-delay="400"].aos-animate { transition-delay: 0.4s; }
+[data-aos-delay="500"].aos-animate { transition-delay: 0.5s; }
+[data-aos-delay="600"].aos-animate { transition-delay: 0.6s; }
+
+/* Mobile Nav */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  flex-direction: column;
+}
+
+.mobile-nav.open { display: flex; }
+
+.mobile-nav-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+}
+
+.mobile-nav-inner {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  width: 280px;
+  height: 100%;
+  margin-left: auto;
+  padding: 80px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: -10px 0 40px rgba(0,0,0,0.2);
+}
+
+.mobile-nav-link {
+  padding: 14px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  border-bottom: 1px solid var(--gray-100);
+  transition: var(--transition);
+}
+
+.mobile-nav-link:hover { color: var(--primary); padding-left: 8px; }
+
+.mobile-nav-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 36px;
+  height: 36px;
+  background: var(--gray-100);
+  border-radius: 50%;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#hero" class="logo">
+        <div class="logo-mark">F</div>
+        <div class="logo-text">
+          <span class="logo-name">FTT Interior</span>
+          <span class="logo-tagline">Luxury Interior Design</span>
+        </div>
+      </a>
+      <nav id="main-nav">
+        <a href="#about" class="nav-link" data-i18n="nav0"></a>
+        <a href="#services" class="nav-link" data-i18n="nav1"></a>
+        <a href="#portfolio" class="nav-link" data-i18n="nav2"></a>
+        <a href="#process" class="nav-link" data-i18n="nav3"></a>
+        <a href="#faq" class="nav-link" data-i18n="nav4"></a>
+        <a href="#contact" class="nav-link" data-i18n="nav5"></a>
+      </nav>
+      <div class="header-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="switchLang('zh')">繁中</button>
+          <button class="lang-btn" onclick="switchLang('vi')">VI</button>
+          <button class="lang-btn" onclick="switchLang('en')">EN</button>
+        </div>
+        <a href="#contact" class="btn btn-primary header-cta" data-i18n="cta"></a>
+        <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-bg" onclick="toggleMobileNav()"></div>
+  <div class="mobile-nav-inner">
+    <button class="mobile-nav-close" onclick="toggleMobileNav()">✕</button>
+    <a href="#about" class="mobile-nav-link" data-i18n="nav0" onclick="toggleMobileNav()"></a>
+    <a href="#services" class="mobile-nav-link" data-i18n="nav1" onclick="toggleMobileNav()"></a>
+    <a href="#portfolio" class="mobile-nav-link" data-i18n="nav2" onclick="toggleMobileNav()"></a>
+    <a href="#process" class="mobile-nav-link" data-i18n="nav3" onclick="toggleMobileNav()"></a>
+    <a href="#faq" class="mobile-nav-link" data-i18n="nav4" onclick="toggleMobileNav()"></a>
+    <a href="#contact" class="mobile-nav-link" data-i18n="nav5" onclick="toggleMobileNav()"></a>
+    <a href="#contact" class="btn btn-primary" style="margin-top:16px;" data-i18n="cta" onclick="toggleMobileNav()"></a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg" id="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-badge">FTT Interior · Vietnam</div>
+      <h1 class="hero-title" data-i18n="heroTitle"></h1>
+      <p class="hero-sub" data-i18n="heroSub"></p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary" data-i18n="heroCta1"></a>
+        <a href="#portfolio" class="btn btn-outline" data-i18n="heroCta2"></a>
+      </div>
+      <div class="hero-cards">
+        <div class="hero-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="hero-card-icon">🏆</div>
+          <div class="hero-card-title">50+</div>
+          <div class="hero-card-sub" data-i18n="stat1"></div>
+        </div>
+        <div class="hero-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="hero-card-icon">✨</div>
+          <div class="hero-card-title">100+</div>
+          <div class="hero-card-sub" data-i18n="stat2"></div>
+        </div>
+        <div class="hero-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="hero-card-icon">🌏</div>
+          <div class="hero-card-title">5+</div>
+          <div class="hero-card-sub" data-i18n="stat3"></div>
+        </div>
+        <div class="hero-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="hero-card-icon">⭐</div>
+          <div class="hero-card-title">98%</div>
+          <div class="hero-card-sub" data-i18n="stat4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content" data-aos="fade-right">
+        <span class="section-tag" data-i18n="aboutTag"></span>
+        <h2 class="section-title" data-i18n="aboutTitle"></h2>
+        <p class="about-text" data-i18n="aboutP1"></p>
+        <p class="about-text" data-i18n="aboutP2"></p>
+        <ul class="about-features">
+          <li data-i18n="aboutF1"></li>
+          <li data-i18n="aboutF2"></li>
+          <li data-i18n="aboutF3"></li>
+          <li data-i18n="aboutF4"></li>
+        </ul>
+        <div class="about-stats">
+          <div class="stat-badge">
+            <div class="stat-number">2018</div>
+            <div class="stat-label" data-i18n="aboutStat1"></div>
+          </div>
+          <div class="stat-badge">
+            <div class="stat-number">50+</div>
+            <div class="stat-label" data-i18n="aboutStat2"></div>
+          </div>
+          <div class="stat-badge">
+            <div class="stat-number">3</div>
+            <div class="stat-label" data-i18n="aboutStat3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-image-wrap" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80" alt="FTT Interior Design" class="about-img">
+        <div class="about-img-accent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-tag" data-i18n="servicesTag"></span>
+      <h2 class="section-title" data-i18n="servicesTitle"></h2>
+      <p class="section-sub" data-i18n="servicesSub"></p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="service-icon">🏠</span>
+        <h3 class="service-name" data-i18n="svc1Title"></h3>
+        <p class="service-desc" data-i18n="svc1Desc"></p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="service-icon">🛠️</span>
+        <h3 class="service-name" data-i18n="svc2Title"></h3>
+        <p class="service-desc" data-i18n="svc2Desc"></p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <span class="service-icon">🛋️</span>
+        <h3 class="service-name" data-i18n="svc3Title"></h3>
+        <p class="service-desc" data-i18n="svc3Desc"></p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <span class="service-icon">🏢</span>
+        <h3 class="service-name" data-i18n="svc4Title"></h3>
+        <p class="service-desc" data-i18n="svc4Desc"></p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="service-icon">🎨</span>
+        <h3 class="service-name" data-i18n="svc5Title"></h3>
+        <p class="service-desc" data-i18n="svc5Desc"></p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="service-icon">💡</span>
+        <h3 class="service-name" data-i18n="svc6Title"></h3>
+        <p class="service-desc" data-i18n="svc6Desc"></p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <span class="service-icon">🏗️</span>
+        <h3 class="service-name" data-i18n="svc7Title"></h3>
+        <p class="service-desc" data-i18n="svc7Desc"></p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <span class="service-icon">📐</span>
+        <h3 class="service-name" data-i18n="svc8Title"></h3>
+        <p class="service-desc" data-i18n="svc8Desc"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-tag" style="color:var(--primary-light);" data-i18n="whyTag"></span>
+      <h2 class="section-title light" data-i18n="whyTitle"></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.45);" data-i18n="whySub"></p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-icon">🇹🇼</div>
+        <h3 class="why-title" data-i18n="why1Title"></h3>
+        <p class="why-desc" data-i18n="why1Desc"></p>
+      </div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="why-icon">📋</div>
+        <h3 class="why-title" data-i18n="why2Title"></h3>
+        <p class="why-desc" data-i18n="why2Desc"></p>
+      </div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="why-icon">💎</div>
+        <h3 class="why-title" data-i18n="why3Title"></h3>
+        <p class="why-desc" data-i18n="why3Desc"></p>
+      </div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-icon">⏱️</div>
+        <h3 class="why-title" data-i18n="why4Title"></h3>
+        <p class="why-desc" data-i18n="why4Desc"></p>
+      </div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="why-icon">🔧</div>
+        <h3 class="why-title" data-i18n="why5Title"></h3>
+        <p class="why-desc" data-i18n="why5Desc"></p>
+      </div>
+      <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="why-icon">💬</div>
+        <h3 class="why-title" data-i18n="why6Title"></h3>
+        <p class="why-desc" data-i18n="why6Desc"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-tag" data-i18n="portfolioTag"></span>
+      <h2 class="section-title" data-i18n="portfolioTitle"></h2>
+      <p class="section-sub" data-i18n="portfolioSub"></p>
+    </div>
+    <div class="portfolio-filters" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all" data-i18n="filterAll" onclick="filterPortfolio(this,'all')"></button>
+      <button class="filter-btn" data-filter="living" data-i18n="filterLiving" onclick="filterPortfolio(this,'living')"></button>
+      <button class="filter-btn" data-filter="bedroom" data-i18n="filterBedroom" onclick="filterPortfolio(this,'bedroom')"></button>
+      <button class="filter-btn" data-filter="kitchen" data-i18n="filterKitchen" onclick="filterPortfolio(this,'kitchen')"></button>
+      <button class="filter-btn" data-filter="office" data-i18n="filterOffice" onclick="filterPortfolio(this,'office')"></button>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-item" data-category="living" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80" alt="Modern Living Room" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag" data-i18n="filterLiving"></div>
+          <div class="portfolio-name" data-i18n="p1Name"></div>
+          <div class="portfolio-meta" data-i18n="p1Meta"></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="bedroom" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Luxury Bedroom" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag" data-i18n="filterBedroom"></div>
+          <div class="portfolio-name" data-i18n="p2Name"></div>
+          <div class="portfolio-meta" data-i18n="p2Meta"></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="kitchen" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Modern Kitchen" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag" data-i18n="filterKitchen"></div>
+          <div class="portfolio-name" data-i18n="p3Name"></div>
+          <div class="portfolio-meta" data-i18n="p3Meta"></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="living" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Contemporary Living" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag" data-i18n="filterLiving"></div>
+          <div class="portfolio-name" data-i18n="p4Name"></div>
+          <div class="portfolio-meta" data-i18n="p4Meta"></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="office" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Modern Office" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag" data-i18n="filterOffice"></div>
+          <div class="portfolio-name" data-i18n="p5Name"></div>
+          <div class="portfolio-meta" data-i18n="p5Meta"></div>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="bedroom" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1615874694520-474822394e73?w=800&q=80" alt="Minimalist Bedroom" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-tag" data-i18n="filterBedroom"></div>
+          <div class="portfolio-name" data-i18n="p6Name"></div>
+          <div class="portfolio-meta" data-i18n="p6Meta"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE AFTER -->
+<section id="before-after">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-tag" data-i18n="baTag"></span>
+      <h2 class="section-title" data-i18n="beforeAfterTitle"></h2>
+      <p class="section-sub" data-i18n="baSub"></p>
+    </div>
+    <div class="ba-container" data-aos="zoom-in">
+      <div class="ba-slider-wrap" id="ba-slider">
+        <div class="ba-before">
+          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80" alt="Before">
+          <div class="ba-label before" data-i18n="baBeforeLabel"></div>
+        </div>
+        <div class="ba-after" id="ba-after">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="After">
+          <div class="ba-label after" data-i18n="baAfterLabel"></div>
+        </div>
+        <div class="ba-handle" id="ba-handle">
+          <div class="ba-handle-circle">⇔</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-tag" data-i18n="processTag"></span>
+      <h2 class="section-title" data-i18n="processTitle"></h2>
+      <p class="section-sub" data-i18n="processSub"></p>
+    </div>
+    <div class="process-timeline">
+      <div class="process-step">
+        <div class="process-text process-card" data-aos="fade-right">
+          <div class="process-step-title" data-i18n="proc1Title"></div>
+          <div class="process-step-desc" data-i18n="proc1Desc"></div>
+        </div>
+        <div class="process-node process-spacer">
+          <div class="process-dot">01</div>
+        </div>
+        <div class="process-empty"></div>
+      </div>
+      <div class="process-step">
+        <div class="process-empty"></div>
+        <div class="process-node process-spacer">
+          <div class="process-dot">02</div>
+        </div>
+        <div class="process-text process-card" data-aos="fade-left">
+          <div class="process-step-title" data-i18n="proc2Title"></div>
+          <div class="process-step-desc" data-i18n="proc2Desc"></div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-text process-card" data-aos="fade-right">
+          <div class="process-step-title" data-i18n="proc3Title"></div>
+          <div class="process-step-desc" data-i18n="proc3Desc"></div>
+        </div>
+        <div class="process-node process-spacer">
+          <div class="process-dot">03</div>
+        </div>
+        <div class="process-empty"></div>
+      </div>
+      <div class="process-step">
+        <div class="process-empty"></div>
+        <div class="process-node process-spacer">
+          <div class="process-dot">04</div>
+        </div>
+        <div class="process-text process-card" data-aos="fade-left">
+          <div class="process-step-title" data-i18n="proc4Title"></div>
+          <div class="process-step-desc" data-i18n="proc4Desc"></div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-text process-card" data-aos="fade-right">
+          <div class="process-step-title" data-i18n="proc5Title"></div>
+          <div class="process-step-desc" data-i18n="proc5Desc"></div>
+        </div>
+        <div class="process-node process-spacer">
+          <div class="process-dot">05</div>
+        </div>
+        <div class="process-empty"></div>
+      </div>
+      <div class="process-step">
+        <div class="process-empty"></div>
+        <div class="process-node process-spacer">
+          <div class="process-dot">06</div>
+        </div>
+        <div class="process-text process-card" data-aos="fade-left">
+          <div class="process-step-title" data-i18n="proc6Title"></div>
+          <div class="process-step-desc" data-i18n="proc6Desc"></div>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-text process-card" data-aos="fade-right">
+          <div class="process-step-title" data-i18n="proc7Title"></div>
+          <div class="process-step-desc" data-i18n="proc7Desc"></div>
+        </div>
+        <div class="process-node process-spacer">
+          <div class="process-dot">07</div>
+        </div>
+        <div class="process-empty"></div>
+      </div>
+      <div class="process-step">
+        <div class="process-empty"></div>
+        <div class="process-node process-spacer">
+          <div class="process-dot">08</div>
+        </div>
+        <div class="process-text process-card" data-aos="fade-left">
+          <div class="process-step-title" data-i18n="proc8Title"></div>
+          <div class="process-step-desc" data-i18n="proc8Desc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO SECTION -->
+<section id="video-section">
+  <div class="video-bg"></div>
+  <div class="container">
+    <div class="video-content" data-aos="fade-up">
+      <button class="play-btn" onclick="openVideoModal()" aria-label="Play video">
+        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+      </button>
+      <span class="section-tag" style="color:var(--primary-light);" data-i18n="videoTag"></span>
+      <h2 class="section-title light" data-i18n="videoTitle"></h2>
+      <p style="color:rgba(255,255,255,0.55);max-width:560px;margin:16px auto 0;font-size:0.95rem;" data-i18n="videoSub"></p>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO MODAL -->
+<div class="video-modal" id="video-modal" onclick="closeVideoModal(event)">
+  <div class="video-modal-inner">
+    <button class="video-close" onclick="closeVideoModal()">✕</button>
+    <iframe id="video-iframe" src="" allowfullscreen allow="autoplay"></iframe>
+  </div>
+</div>
+
+<!-- STATS COUNTER -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-count"><span class="counter" data-target="50">0</span><span class="stat-unit">+</span></div>
+        <div class="stat-desc" data-i18n="stat1"></div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-count"><span class="counter" data-target="100">0</span><span class="stat-unit">+</span></div>
+        <div class="stat-desc" data-i18n="stat2"></div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-count"><span class="counter" data-target="5">0</span><span class="stat-unit">+</span></div>
+        <div class="stat-desc" data-i18n="stat3"></div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-count"><span class="counter" data-target="98">0</span><span class="stat-unit">%</span></div>
+        <div class="stat-desc" data-i18n="stat4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-tag" data-i18n="reviewsTag"></span>
+      <h2 class="section-title" data-i18n="reviewsTitle"></h2>
+    </div>
+    <div class="testimonials-slider" data-aos="fade-up">
+      <div class="testimonials-track" id="testimonials-track">
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-i18n="review1Text"></p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="客戶" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name" data-i18n="review1Name"></div>
+                <div class="testimonial-role" data-i18n="review1Role"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-i18n="review2Text"></p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="客戶" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name" data-i18n="review2Name"></div>
+                <div class="testimonial-role" data-i18n="review2Role"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-i18n="review3Text"></p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="客戶" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-name" data-i18n="review3Name"></div>
+                <div class="testimonial-role" data-i18n="review3Role"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" onclick="slideTo(currentSlide-1)">←</button>
+        <div class="slider-dots">
+          <div class="slider-dot active" onclick="slideTo(0)"></div>
+          <div class="slider-dot" onclick="slideTo(1)"></div>
+          <div class="slider-dot" onclick="slideTo(2)"></div>
+        </div>
+        <button class="slider-btn" onclick="slideTo(currentSlide+1)">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-tag" data-i18n="faqTag"></span>
+      <h2 class="section-title" data-i18n="faqTitle"></h2>
+      <p class="section-sub" data-i18n="faqSub"></p>
+    </div>
+    <div class="faq-list" data-aos="fade-up">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq1Q"></span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq1A"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq2Q"></span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq2A"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq3Q"></span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq3A"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq4Q"></span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq4A"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq5Q"></span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq5A"></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq6Q"></span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq6A"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-tag" data-i18n="contactTag"></span>
+      <h2 class="section-title" data-i18n="contactTitle"></h2>
+      <p class="section-sub" data-i18n="contactSub"></p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <h3 data-i18n="contactInfoTitle"></h3>
+        <p data-i18n="contactInfoDesc"></p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon-wrap">📞</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label" data-i18n="contactPhone"></div>
+              <a href="tel:+84812991003" class="contact-item-value">+84 812 991 003</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap">✉️</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label" data-i18n="contactEmail"></div>
+              <a href="mailto:fttmuabanbds@gmail.com" class="contact-item-value">fttmuabanbds@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap" style="background:#06C755;">💬</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">LINE</div>
+              <a href="https://line.me/R/ti/p/@fttinterior" target="_blank" class="contact-item-value">@fttinterior</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap" style="background:#0068FF;">💙</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Zalo</div>
+              <a href="https://zalo.me/84812991003" target="_blank" class="contact-item-value">+84 812 991 003</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap">📍</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label" data-i18n="contactAddr"></div>
+              <div class="contact-item-value" data-i18n="contactAddrVal"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form" data-aos="fade-left">
+        <form id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" data-i18n="formName"></label>
+              <input type="text" id="f-name" class="form-control" data-i18n-ph="formNamePh">
+              <div class="form-error" id="err-name" data-i18n="errRequired"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="formPhone"></label>
+              <input type="tel" id="f-phone" class="form-control" data-i18n-ph="formPhonePh">
+              <div class="form-error" id="err-phone" data-i18n="errPhone"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" data-i18n="formEmail"></label>
+              <input type="email" id="f-email" class="form-control" data-i18n-ph="formEmailPh">
+              <div class="form-error" id="err-email" data-i18n="errEmail"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="formLine"></label>
+              <input type="text" id="f-line" class="form-control" data-i18n-ph="formLinePh">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" data-i18n="formBudget"></label>
+              <select id="f-budget" class="form-control">
+                <option value="" data-i18n="formBudgetPh"></option>
+                <option value="500" data-i18n="budget1"></option>
+                <option value="1000" data-i18n="budget2"></option>
+                <option value="2000" data-i18n="budget3"></option>
+                <option value="5000" data-i18n="budget4"></option>
+              </select>
+              <div class="form-error" id="err-budget" data-i18n="errRequired"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="formArea"></label>
+              <select id="f-area" class="form-control">
+                <option value="" data-i18n="formAreaPh"></option>
+                <option value="u50">< 50 m²</option>
+                <option value="50-100">50 – 100 m²</option>
+                <option value="100-200">100 – 200 m²</option>
+                <option value="200p">> 200 m²</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="formService"></label>
+            <select id="f-service" class="form-control">
+              <option value="" data-i18n="formServicePh"></option>
+              <option value="full" data-i18n="svc1Title"></option>
+              <option value="renovation" data-i18n="svc2Title"></option>
+              <option value="furniture" data-i18n="svc3Title"></option>
+              <option value="commercial" data-i18n="svc4Title"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="formMessage"></label>
+            <textarea id="f-message" class="form-control" rows="4" data-i18n-ph="formMessagePh"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" data-i18n="formSubmit"></button>
+          <div id="form-success" style="display:none;margin-top:16px;padding:16px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;color:#166534;font-size:0.9rem;text-align:center;"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div id="map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125416.37491773658!2d106.62978239453126!3d10.8230989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- CTA BANNER -->
+<section id="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner" data-aos="fade-up">
+      <span class="section-tag" style="color:var(--primary-light);" data-i18n="ctaTag"></span>
+      <h2 class="cta-banner-title" data-i18n="ctaBannerTitle"></h2>
+      <p class="cta-banner-sub" data-i18n="ctaBannerSub"></p>
+      <a href="#contact" class="btn btn-primary" style="font-size:1rem;padding:16px 40px;" data-i18n="ctaBannerBtn"></a>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="https://line.me/R/ti/p/@fttinterior" target="_blank" class="float-btn line">
+    <span class="float-btn-icon">L</span>
+    <span class="float-label">LINE Chat</span>
+  </a>
+  <a href="https://zalo.me/84812991003" target="_blank" class="float-btn zalo">
+    <span class="float-btn-icon">Z</span>
+    <span class="float-label">Zalo Chat</span>
+  </a>
+  <a href="weixin://" class="float-btn wechat">
+    <span class="float-btn-icon">W</span>
+    <span class="float-label">WeChat</span>
+  </a>
+  <a href="tel:+84812991003" class="float-btn phone">
+    <span class="float-btn-icon">📞</span>
+    <span class="float-label">+84 812 991 003</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">F</div>
+          <div class="logo-text">
+            <span class="logo-name">FTT Interior</span>
+            <span class="logo-tagline">Luxury Interior Design</span>
+          </div>
+        </div>
+        <p class="footer-desc" data-i18n="footerDesc"></p>
+        <div class="footer-socials">
+          <a href="https://line.me/R/ti/p/@fttinterior" target="_blank" class="social-btn">L</a>
+          <a href="https://zalo.me/84812991003" target="_blank" class="social-btn">Z</a>
+          <a href="mailto:fttmuabanbds@gmail.com" class="social-btn">✉</a>
+          <a href="tel:+84812991003" class="social-btn">📞</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading" data-i18n="footerNav"></div>
+        <ul class="footer-links">
+          <li><a href="#about" data-i18n="nav0"></a></li>
+          <li><a href="#services" data-i18n="nav1"></a></li>
+          <li><a href="#portfolio" data-i18n="nav2"></a></li>
+          <li><a href="#process" data-i18n="nav3"></a></li>
+          <li><a href="#faq" data-i18n="nav4"></a></li>
+          <li><a href="#contact" data-i18n="nav5"></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading" data-i18n="footerServices"></div>
+        <ul class="footer-links">
+          <li><a href="#services" data-i18n="svc1Title"></a></li>
+          <li><a href="#services" data-i18n="svc2Title"></a></li>
+          <li><a href="#services" data-i18n="svc3Title"></a></li>
+          <li><a href="#services" data-i18n="svc4Title"></a></li>
+          <li><a href="#services" data-i18n="svc5Title"></a></li>
+          <li><a href="#services" data-i18n="svc6Title"></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading" data-i18n="footerContact"></div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <a href="tel:+84812991003" style="color:rgba(255,255,255,0.5);">+84 812 991 003</a>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️</span>
+          <a href="mailto:fttmuabanbds@gmail.com" style="color:rgba(255,255,255,0.5);">fttmuabanbds@gmail.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <span>💬</span>
+          <a href="https://line.me/R/ti/p/@fttinterior" target="_blank" style="color:rgba(255,255,255,0.5);">LINE: @fttinterior</a>
+        </div>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span data-i18n="footerAddr"></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy" data-i18n="footerCopy"></div>
+      <div class="footer-copy" data-i18n="footerRights"></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== TRANSLATIONS =====
+const translations = {
+  zh: {
+    nav0: '首頁', nav1: '關於我們', nav2: '服務項目', nav3: '施工流程', nav4: '常見問題', nav5: '聯絡我們',
+    cta: '免費諮詢',
+    heroTitle: '打造您理想中的越南精品住宅',
+    heroSub: '專業室內設計、裝潢施工與一站式家具配置服務，為在越南生活與投資的您打造兼具美感、舒適與實用性的理想空間。',
+    heroCta1: '免費預約諮詢', heroCta2: '查看施工案例',
+    stat1: '精品案例完成', stat2: '滿意客戶', stat3: '年專業經驗', stat4: '客戶滿意度',
+    aboutTag: 'ABOUT US',
+    aboutTitle: '我們是誰？',
+    aboutP1: 'FTT Interior 是一家專注於越南高端住宅室內設計的公司，服務對象以台灣、香港與海外華人為主。我們深刻理解海外屋主的需求與顧慮，提供從設計規劃到施工完成的一站式服務。',
+    aboutP2: '自 2018 年創立以來，我們已完成超過 50 個精品住宅案例，客戶遍及胡志明市、河內、峴港等越南主要城市。我們以台灣的品質標準，在越南打造每一個美好居家空間。',
+    aboutF1: '中文溝通，無語言障礙', aboutF2: '全程透明報價，無隱藏費用',
+    aboutF3: '嚴選進口建材與家具', aboutF4: '完工後提供一年保固服務',
+    aboutStat1: '成立年份', aboutStat2: '完成案例', aboutStat3: '服務城市',
+    servicesTag: 'OUR SERVICES',
+    servicesTitle: '專業服務項目',
+    servicesSub: '從設計概念到完工交屋，提供全面的室內設計與裝潢施工解決方案。',
+    svc1Title: '全室室內設計', svc1Desc: '從空間規劃、風格定義到材料選配，提供完整的室內設計解決方案，讓您的理想家居成真。',
+    svc2Title: '裝潢施工', svc2Desc: '專業施工團隊，嚴格執行設計圖面，確保每個細節都達到最高品質標準，按時完工交屋。',
+    svc3Title: '家具軟裝配置', svc3Desc: '精選高品質家具、燈飾與裝飾品，打造兼具風格與舒適感的完美生活空間。',
+    svc4Title: '商業空間設計', svc4Desc: '辦公室、餐廳、零售店面等商業空間設計，結合品牌形象與實用功能，提升商業價值。',
+    svc5Title: '空間色彩規劃', svc5Desc: '專業色彩顧問服務，根據空間特性與客戶喜好，打造和諧統一的色彩視覺方案。',
+    svc6Title: '智能家居系統', svc6Desc: '整合智能燈光、窗簾、安防等系統，打造現代化智能生活體驗，提升居住舒適度。',
+    svc7Title: '舊屋翻新改造', svc7Desc: '針對老舊房屋進行全面翻新改造，在保留原有結構的基礎上，煥然一新打造現代風格。',
+    svc8Title: '3D 設計渲染', svc8Desc: '運用先進的 3D 渲染技術，在施工前讓您清楚看到完工效果，確保設計符合期待。',
+    whyTag: 'WHY US',
+    whyTitle: '為什麼選擇 FTT Interior？',
+    whySub: '六大核心優勢，讓您的越南置居之路更安心、更放心。',
+    why1Title: '台灣人理解台灣人', why1Desc: '我們的設計師與客服人員均能以中文（繁體）溝通，深刻理解台灣屋主對品質、美學與生活方式的獨特需求。',
+    why2Title: '透明報價零隱費', why2Desc: '所有費用在簽約前全部揭露，提供詳細的工程估算清單，確保您了解每一分錢的用途，絕無隱藏費用。',
+    why3Title: '頂級建材嚴選', why3Desc: '與越南及國際知名建材供應商合作，嚴格把關材料品質，確保每個施工細節都達到最高標準。',
+    why4Title: '準時交屋保證', why4Desc: '提供書面工程時程承諾，透過專業的項目管理系統追蹤進度，確保按合約時間完工交屋。',
+    why5Title: '一年施工保固', why5Desc: '完工後提供一年全面保固服務，任何施工相關問題，我們的維修團隊將在 48 小時內響應處理。',
+    why6Title: '全程中文溝通', why6Desc: '從初次諮詢到完工交屋，全程提供中文服務，包括設計說明、合約條款與施工進度報告，讓您完全掌握一切。',
+    portfolioTag: 'OUR WORK',
+    portfolioTitle: '精選施工案例',
+    portfolioSub: '每一個空間，都是生活品味的延伸。',
+    filterAll: '全部', filterLiving: '客廳', filterBedroom: '臥室', filterKitchen: '廚房', filterOffice: '辦公室',
+    p1Name: '現代簡約客廳', p1Meta: '胡志明市 · 2024', p2Name: '奢華主臥套房', p2Meta: '河內 · 2023',
+    p3Name: '歐式開放廚房', p3Meta: '胡志明市 · 2024', p4Name: '北歐風格公寓', p4Meta: '峴港 · 2023',
+    p5Name: '企業辦公室', p5Meta: '胡志明市 · 2024', p6Name: '日式禪意臥室', p6Meta: '河內 · 2023',
+    baTag: 'BEFORE & AFTER',
+    beforeAfterTitle: '看見空間改變的力量',
+    baSub: '拖動滑塊，親眼見證我們的專業改造技術。',
+    baBeforeLabel: '改造前', baAfterLabel: '改造後',
+    processTag: 'OUR PROCESS',
+    processTitle: '服務流程',
+    processSub: '八個步驟，確保您的裝修體驗順暢、安心、透明。',
+    proc1Title: '初步諮詢', proc1Desc: '免費線上諮詢，了解您的需求、風格偏好與預算範圍，評估可行方案。',
+    proc2Title: '現場丈量', proc2Desc: '安排專業設計師到府丈量，詳細評估空間條件，蒐集第一手設計資料。',
+    proc3Title: '概念設計', proc3Desc: '根據諮詢結果提出初步設計概念，包含平面配置圖、風格方向與材料建議。',
+    proc4Title: '3D 設計確認', proc4Desc: '提供完整的 3D 渲染效果圖，讓您在施工前清楚看到完工效果，確認細節後再開工。',
+    proc5Title: '報價與簽約', proc5Desc: '提供詳細工程報價清單，條款透明公正，雙方確認後簽訂正式施工合約。',
+    proc6Title: '採購備料', proc6Desc: '根據設計規格採購所有建材與家具，確保品質符合標準，並安排最佳到貨時間。',
+    proc7Title: '施工管理', proc7Desc: '專業工程團隊依設計圖施工，項目經理全程監督品質，定期提供施工進度照片與報告。',
+    proc8Title: '完工驗收', proc8Desc: '工程完成後進行全面驗收，確保每個細節符合設計要求，交屋並開始一年保固期。',
+    videoTag: 'VIDEO TOUR',
+    videoTitle: '深入了解我們的施工品質',
+    videoSub: '觀看我們的施工過程與完工實績影片，親眼見證 FTT Interior 的專業工藝水準。',
+    reviewsTag: 'TESTIMONIALS',
+    reviewsTitle: '客戶真實評價',
+    review1Text: '從台灣遠端委託 FTT Interior 幫我裝修胡志明市的公寓，整個過程完全超乎預期。設計師不僅了解我的想法，還提出了很多我沒想到的好建議。最重要的是，全程中文溝通，讓我完全沒有語言隔閡的壓力。完工效果讓我每次回越南都迫不及待想回家！',
+    review1Name: '林先生', review1Role: '台灣投資客 · 胡志明市',
+    review2Text: '我在河內有一套老公寓需要翻新，一開始很擔心人不在越南監工的問題。FTT Interior 每天都會發施工進度照片給我，項目經理的服務態度非常專業。最後完工的結果完全符合設計圖，品質超過預期，非常推薦！',
+    review2Name: '陳小姐', review2Role: '台商 · 河內',
+    review3Text: '因為工作調派來越南，需要快速佈置一個舒適的居家環境。FTT Interior 從設計到完工只花了 45 天，效率驚人。整體質感非常棒，完全是台灣的品質標準，朋友來訪都讚不絕口，強烈推薦給所有在越南的台灣人！',
+    review3Name: '王先生', review3Role: '企業主管 · 胡志明市',
+    faqTag: 'FAQ',
+    faqTitle: '常見問題',
+    faqSub: '關於我們的服務，您可能想知道的一切。',
+    faq1Q: '我人在台灣，如何委託你們進行裝修？', faq1A: '您完全不需要親自在越南即可進行委託。我們提供全程遠端服務：線上諮詢（LINE/Zoom/WeChat）、電子合約簽署、每日施工進度照片及影片回報，讓您坐在台灣也能完全掌握工程進度。',
+    faq2Q: '從設計到完工大概需要多長時間？', faq2A: '一般住宅案件（50-100 平方米）從簽約到完工約需 45-60 個工作天。大坪數或較複雜的案件可能需要 90-120 天。我們會在簽約前提供詳細的工程時程表，並以書面承諾交屋日期。',
+    faq3Q: '服務費用大概是多少？有包含家具嗎？', faq3A: '基本設計施工費用依空間大小與風格複雜度而異，一般住宅約為每平方米 8-25 萬越南盾（約 3-10 美元）起。家具配置為獨立報價項目，可根據預算靈活調整。我們提供免費估價，歡迎諮詢。',
+    faq4Q: '你們使用的建材品質如何？', faq4A: '我們與越南、台灣、義大利等地知名建材品牌合作，嚴格篩選每一種材料的品質。客戶可以在設計確認階段親自挑選材料樣品，所有材料均附原廠品質保證書，確保施工品質。',
+    faq5Q: '完工後有提供保固服務嗎？', faq5A: '是的，我們提供完工後一年的全面保固服務，涵蓋所有施工相關問題，包括木工、油漆、水電、磁磚等。保固期內，我們的維修團隊將在 48 小時內響應並免費處理所有施工問題。',
+    faq6Q: '可以提供設計圖稿和 3D 效果圖嗎？', faq6A: '可以。我們的服務包含完整的設計圖稿（平面配置圖、立面圖、細部施工圖）以及高品質的 3D 渲染效果圖。客戶可以在確認設計後才簽訂施工合約，確保完全滿意設計效果再開始施工。',
+    contactTag: 'CONTACT',
+    contactTitle: '立即預約免費諮詢',
+    contactSub: '留下您的聯絡資訊，我們將在 24 小時內回覆您。',
+    contactInfoTitle: '隨時與我們聯繫',
+    contactInfoDesc: '無論您有任何問題或想法，我們的專業顧問團隊隨時準備好為您服務。',
+    contactPhone: '電話 / WhatsApp', contactEmail: '電子郵件', contactAddr: '服務地區', contactAddrVal: '胡志明市・河內・峴港',
+    formName: '姓名 *', formNamePh: '請輸入您的姓名',
+    formPhone: '電話 *', formPhonePh: '+886 or +84...',
+    formEmail: '電子郵件 *', formEmailPh: 'your@email.com',
+    formLine: 'LINE / WeChat ID', formLinePh: '@lineID 或 WeChat',
+    formBudget: '預算範圍 *', formBudgetPh: '請選擇預算範圍',
+    formArea: '空間坪數', formAreaPh: '請選擇空間大小',
+    formService: '需要的服務', formServicePh: '請選擇服務類型',
+    formMessage: '其他需求說明', formMessagePh: '請描述您的設計需求、風格偏好或其他問題...',
+    formSubmit: '送出預約申請 →',
+    formSuccess: '✓ 感謝您的預約！我們將在 24 小時內聯絡您。',
+    budget1: 'USD 500 – 1,000', budget2: 'USD 1,000 – 2,000', budget3: 'USD 2,000 – 5,000', budget4: 'USD 5,000 以上',
+    errRequired: '此欄位為必填', errPhone: '請輸入有效的電話號碼', errEmail: '請輸入有效的電子郵件',
+    ctaTag: 'GET STARTED',
+    ctaBannerTitle: '準備好打造您的理想居家空間了嗎？',
+    ctaBannerSub: '立即預約免費諮詢，讓我們為您規劃最適合的室內設計方案，打造您夢想中的越南精品住宅。',
+    ctaBannerBtn: '立即聯絡我們',
+    footerDesc: 'FTT Interior 專注於為台灣及海外華人客戶提供越南高端室內設計服務，以台灣的品質標準，打造每一個精品居家空間。',
+    footerNav: '快速導覽', footerServices: '服務項目', footerContact: '聯絡資訊',
+    footerAddr: '胡志明市・河內・峴港',
+    footerCopy: '© 2024 FTT Interior. All Rights Reserved.',
+    footerRights: '越南精品室內設計',
+  },
+  vi: {
+    nav0: 'Trang chủ', nav1: 'Giới thiệu', nav2: 'Dịch vụ', nav3: 'Quy trình', nav4: 'FAQ', nav5: 'Liên hệ',
+    cta: 'Tư vấn miễn phí',
+    heroTitle: 'Kiến tạo không gian sống đẳng cấp tại Việt Nam',
+    heroSub: 'Dịch vụ thiết kế, thi công nội thất và hoàn thiện căn hộ trọn gói, dành cho khách hàng đang sinh sống hoặc đầu tư tại Việt Nam.',
+    heroCta1: 'Đăng ký tư vấn miễn phí', heroCta2: 'Xem dự án thực tế',
+    stat1: 'Dự án hoàn thành', stat2: 'Khách hàng hài lòng', stat3: 'Năm kinh nghiệm', stat4: 'Tỷ lệ hài lòng',
+    aboutTag: 'VỀ CHÚNG TÔI',
+    aboutTitle: 'Chúng tôi là ai?',
+    aboutP1: 'FTT Interior là công ty thiết kế nội thất cao cấp tại Việt Nam, phục vụ chủ yếu khách hàng Đài Loan, Hồng Kông và người Hoa hải ngoại. Chúng tôi cung cấp dịch vụ trọn gói từ thiết kế đến thi công hoàn thiện.',
+    aboutP2: 'Từ năm 2018, chúng tôi đã hoàn thành hơn 50 dự án nội thất cao cấp tại TP.HCM, Hà Nội và Đà Nẵng. Chúng tôi áp dụng tiêu chuẩn chất lượng Đài Loan trong từng công trình tại Việt Nam.',
+    aboutF1: 'Giao tiếp tiếng Trung, không rào cản ngôn ngữ', aboutF2: 'Báo giá minh bạch, không phát sinh phí ẩn',
+    aboutF3: 'Vật liệu nhập khẩu chọn lọc', aboutF4: 'Bảo hành 1 năm sau khi bàn giao',
+    aboutStat1: 'Năm thành lập', aboutStat2: 'Dự án hoàn thành', aboutStat3: 'Thành phố phục vụ',
+    servicesTag: 'DỊCH VỤ',
+    servicesTitle: 'Dịch vụ chuyên nghiệp',
+    servicesSub: 'Giải pháp thiết kế và thi công nội thất toàn diện từ ý tưởng đến bàn giao.',
+    svc1Title: 'Thiết kế nội thất toàn bộ', svc1Desc: 'Thiết kế không gian, phong cách và vật liệu hoàn chỉnh cho ngôi nhà lý tưởng của bạn.',
+    svc2Title: 'Thi công & cải tạo', svc2Desc: 'Đội ngũ thi công chuyên nghiệp, đảm bảo chất lượng từng chi tiết và bàn giao đúng tiến độ.',
+    svc3Title: 'Nội thất & trang trí', svc3Desc: 'Tuyển chọn nội thất, đèn chiếu sáng và phụ kiện trang trí tạo không gian sống hoàn hảo.',
+    svc4Title: 'Thiết kế không gian thương mại', svc4Desc: 'Thiết kế văn phòng, nhà hàng, cửa hàng kết hợp thương hiệu và tính năng thực tiễn.',
+    svc5Title: 'Tư vấn màu sắc', svc5Desc: 'Giải pháp màu sắc chuyên nghiệp phù hợp với đặc tính không gian và sở thích cá nhân.',
+    svc6Title: 'Hệ thống nhà thông minh', svc6Desc: 'Tích hợp hệ thống ánh sáng, rèm cửa và an ninh thông minh nâng cao trải nghiệm sống.',
+    svc7Title: 'Cải tạo nhà cũ', svc7Desc: 'Cải tạo toàn diện căn hộ cũ, tạo không gian hiện đại trên nền kết cấu có sẵn.',
+    svc8Title: 'Thiết kế & dựng 3D', svc8Desc: 'Hình ảnh 3D chất lượng cao giúp bạn hình dung không gian hoàn thiện trước khi thi công.',
+    whyTag: 'TẠI SAO CHỌN CHÚNG TÔI',
+    whyTitle: 'Tại sao chọn FTT Interior?',
+    whySub: 'Sáu lợi thế cốt lõi giúp hành trình an cư tại Việt Nam của bạn trở nên dễ dàng và an tâm hơn.',
+    why1Title: 'Hiểu khách hàng Đài Loan', why1Desc: 'Đội ngũ của chúng tôi hiểu sâu sắc tiêu chuẩn chất lượng và thẩm mỹ của người Đài Loan, giao tiếp hoàn toàn bằng tiếng Trung.',
+    why2Title: 'Báo giá minh bạch', why2Desc: 'Tất cả chi phí được công khai trước khi ký hợp đồng, không phát sinh chi phí ẩn.',
+    why3Title: 'Vật liệu cao cấp', why3Desc: 'Hợp tác với các nhà cung cấp vật liệu uy tín trong và ngoài nước, kiểm soát chặt chẽ chất lượng.',
+    why4Title: 'Bàn giao đúng tiến độ', why4Desc: 'Cam kết bằng văn bản về thời gian thi công, theo dõi tiến độ qua hệ thống quản lý dự án chuyên nghiệp.',
+    why5Title: 'Bảo hành 1 năm', why5Desc: 'Dịch vụ bảo hành toàn diện sau bàn giao, đội bảo trì phản hồi trong 48 giờ.',
+    why6Title: 'Phục vụ bằng tiếng Trung', why6Desc: 'Từ tư vấn đến bàn giao, toàn bộ dịch vụ được thực hiện bằng tiếng Trung, không lo rào cản ngôn ngữ.',
+    portfolioTag: 'DỰ ÁN',
+    portfolioTitle: 'Dự án tiêu biểu',
+    portfolioSub: 'Mỗi không gian là một câu chuyện về phong cách sống.',
+    filterAll: 'Tất cả', filterLiving: 'Phòng khách', filterBedroom: 'Phòng ngủ', filterKitchen: 'Nhà bếp', filterOffice: 'Văn phòng',
+    p1Name: 'Phòng khách hiện đại', p1Meta: 'TP.HCM · 2024', p2Name: 'Phòng ngủ master cao cấp', p2Meta: 'Hà Nội · 2023',
+    p3Name: 'Bếp mở phong cách châu Âu', p3Meta: 'TP.HCM · 2024', p4Name: 'Căn hộ phong cách Bắc Âu', p4Meta: 'Đà Nẵng · 2023',
+    p5Name: 'Văn phòng doanh nghiệp', p5Meta: 'TP.HCM · 2024', p6Name: 'Phòng ngủ phong cách Nhật', p6Meta: 'Hà Nội · 2023',
+    baTag: 'TRƯỚC & SAU',
+    beforeAfterTitle: 'Nhìn thấy sự thay đổi của không gian',
+    baSub: 'Kéo thanh trượt để chứng kiến sự khác biệt trước và sau cải tạo.',
+    baBeforeLabel: 'Trước', baAfterLabel: 'Sau',
+    processTag: 'QUY TRÌNH',
+    processTitle: 'Quy trình dịch vụ',
+    processSub: 'Tám bước đảm bảo trải nghiệm thi công suôn sẻ, minh bạch và an tâm.',
+    proc1Title: 'Tư vấn ban đầu', proc1Desc: 'Tư vấn trực tuyến miễn phí, tìm hiểu nhu cầu, phong cách và ngân sách của bạn.',
+    proc2Title: 'Khảo sát thực tế', proc2Desc: 'Kiến trúc sư đến đo đạc, đánh giá chi tiết không gian và thu thập thông tin thiết kế.',
+    proc3Title: 'Thiết kế ý tưởng', proc3Desc: 'Đề xuất ý tưởng thiết kế ban đầu bao gồm mặt bằng, phong cách và vật liệu.',
+    proc4Title: 'Xác nhận 3D', proc4Desc: 'Bản vẽ 3D chi tiết giúp bạn thấy rõ không gian hoàn thiện trước khi ký hợp đồng thi công.',
+    proc5Title: 'Báo giá & ký hợp đồng', proc5Desc: 'Báo giá chi tiết, điều khoản minh bạch, ký hợp đồng thi công chính thức.',
+    proc6Title: 'Mua vật tư', proc6Desc: 'Mua sắm vật liệu và nội thất theo tiêu chuẩn thiết kế, đảm bảo chất lượng và tiến độ.',
+    proc7Title: 'Thi công & giám sát', proc7Desc: 'Đội ngũ thi công chuyên nghiệp, giám sát liên tục, cập nhật tiến độ hàng ngày.',
+    proc8Title: 'Nghiệm thu & bàn giao', proc8Desc: 'Kiểm tra toàn diện, bàn giao và bắt đầu thời gian bảo hành 1 năm.',
+    videoTag: 'VIDEO',
+    videoTitle: 'Khám phá chất lượng thi công của chúng tôi',
+    videoSub: 'Xem video về quy trình thi công và các dự án đã hoàn thành của FTT Interior.',
+    reviewsTag: 'ĐÁNH GIÁ',
+    reviewsTitle: 'Đánh giá của khách hàng',
+    review1Text: 'Tôi ủy thác FTT Interior cải tạo căn hộ tại TP.HCM từ Đài Loan. Toàn bộ quá trình vượt ngoài mong đợi. Kiến trúc sư không chỉ hiểu ý tưởng của tôi mà còn đề xuất nhiều giải pháp sáng tạo. Quan trọng nhất là giao tiếp hoàn toàn bằng tiếng Trung, không có rào cản ngôn ngữ.',
+    review1Name: 'Anh Lâm', review1Role: 'Nhà đầu tư Đài Loan · TP.HCM',
+    review2Text: 'Tôi có căn hộ cũ cần cải tạo tại Hà Nội, ban đầu rất lo vì không thể giám sát trực tiếp. FTT Interior gửi ảnh tiến độ thi công mỗi ngày, thái độ chuyên nghiệp. Kết quả hoàn toàn đúng với bản vẽ, chất lượng vượt mong đợi, rất đáng tin cậy!',
+    review2Name: 'Chị Trần', review2Role: 'Doanh nhân Đài Loan · Hà Nội',
+    review3Text: 'Được điều phái sang Việt Nam làm việc, cần nhanh chóng có không gian sống tiện nghi. FTT Interior hoàn thành từ thiết kế đến bàn giao chỉ trong 45 ngày. Chất lượng tổng thể rất tốt, đúng tiêu chuẩn Đài Loan. Nhiệt tình giới thiệu cho tất cả người Đài Loan tại Việt Nam!',
+    review3Name: 'Anh Vương', review3Role: 'Giám đốc điều hành · TP.HCM',
+    faqTag: 'CÂU HỎI THƯỜNG GẶP',
+    faqTitle: 'Câu hỏi thường gặp',
+    faqSub: 'Mọi thứ bạn cần biết về dịch vụ của chúng tôi.',
+    faq1Q: 'Tôi ở Đài Loan, làm sao ủy thác cải tạo?', faq1A: 'Bạn hoàn toàn không cần có mặt tại Việt Nam. Chúng tôi cung cấp dịch vụ từ xa hoàn toàn: tư vấn trực tuyến (LINE/Zoom/WeChat), ký hợp đồng điện tử, cập nhật ảnh và video tiến độ hàng ngày.',
+    faq2Q: 'Thời gian từ thiết kế đến hoàn thiện là bao lâu?', faq2A: 'Căn hộ thông thường (50-100 m²) từ ký hợp đồng đến bàn giao khoảng 45-60 ngày làm việc. Dự án lớn hơn có thể cần 90-120 ngày. Chúng tôi cung cấp lịch thi công chi tiết trước khi ký hợp đồng.',
+    faq3Q: 'Chi phí dịch vụ khoảng bao nhiêu?', faq3A: 'Chi phí thiết kế và thi công cơ bản từ 8-25 triệu VNĐ/m² tùy theo diện tích và độ phức tạp. Nội thất được báo giá riêng, linh hoạt theo ngân sách. Chúng tôi cung cấp báo giá miễn phí.',
+    faq4Q: 'Chất lượng vật liệu xây dựng như thế nào?', faq4A: 'Chúng tôi hợp tác với các thương hiệu vật liệu uy tín từ Việt Nam, Đài Loan và Ý. Khách hàng có thể trực tiếp chọn mẫu vật liệu trong giai đoạn xác nhận thiết kế.',
+    faq5Q: 'Có dịch vụ bảo hành sau khi bàn giao không?', faq5A: 'Có, chúng tôi cung cấp bảo hành toàn diện 1 năm cho tất cả các hạng mục thi công. Đội bảo trì của chúng tôi sẽ phản hồi trong vòng 48 giờ trong thời gian bảo hành.',
+    faq6Q: 'Có cung cấp bản vẽ thiết kế và hình ảnh 3D không?', faq6A: 'Có. Dịch vụ của chúng tôi bao gồm đầy đủ bản vẽ thiết kế (mặt bằng, mặt đứng, chi tiết thi công) và hình ảnh 3D chất lượng cao. Khách hàng xác nhận thiết kế trước khi ký hợp đồng thi công.',
+    contactTag: 'LIÊN HỆ',
+    contactTitle: 'Đặt lịch tư vấn miễn phí',
+    contactSub: 'Để lại thông tin liên hệ, chúng tôi sẽ phản hồi trong vòng 24 giờ.',
+    contactInfoTitle: 'Liên hệ với chúng tôi',
+    contactInfoDesc: 'Dù bạn có bất kỳ câu hỏi hay ý tưởng nào, đội ngũ tư vấn chuyên nghiệp của chúng tôi luôn sẵn sàng hỗ trợ.',
+    contactPhone: 'Điện thoại / WhatsApp', contactEmail: 'Email', contactAddr: 'Khu vực phục vụ', contactAddrVal: 'TP.HCM · Hà Nội · Đà Nẵng',
+    formName: 'Họ và tên *', formNamePh: 'Nhập họ và tên',
+    formPhone: 'Điện thoại *', formPhonePh: '+84 hoặc +886...',
+    formEmail: 'Email *', formEmailPh: 'your@email.com',
+    formLine: 'LINE / WeChat ID', formLinePh: '@lineID hoặc WeChat',
+    formBudget: 'Ngân sách *', formBudgetPh: 'Chọn ngân sách',
+    formArea: 'Diện tích', formAreaPh: 'Chọn diện tích',
+    formService: 'Dịch vụ cần', formServicePh: 'Chọn loại dịch vụ',
+    formMessage: 'Ghi chú thêm', formMessagePh: 'Mô tả nhu cầu, phong cách hoặc câu hỏi...',
+    formSubmit: 'Gửi yêu cầu tư vấn →',
+    formSuccess: '✓ Cảm ơn bạn! Chúng tôi sẽ liên hệ trong vòng 24 giờ.',
+    budget1: 'USD 500 – 1.000', budget2: 'USD 1.000 – 2.000', budget3: 'USD 2.000 – 5.000', budget4: 'USD 5.000 trở lên',
+    errRequired: 'Trường này là bắt buộc', errPhone: 'Vui lòng nhập số điện thoại hợp lệ', errEmail: 'Vui lòng nhập email hợp lệ',
+    ctaTag: 'BẮT ĐẦU NGAY',
+    ctaBannerTitle: 'Bạn đã sẵn sàng nâng cấp không gian sống?',
+    ctaBannerSub: 'Đăng ký tư vấn miễn phí để nhận giải pháp thiết kế nội thất phù hợp nhất với bạn.',
+    ctaBannerBtn: 'Liên hệ ngay',
+    footerDesc: 'FTT Interior chuyên cung cấp dịch vụ thiết kế nội thất cao cấp cho khách hàng Đài Loan và người Hoa hải ngoại tại Việt Nam.',
+    footerNav: 'Điều hướng', footerServices: 'Dịch vụ', footerContact: 'Thông tin liên hệ',
+    footerAddr: 'TP.HCM · Hà Nội · Đà Nẵng',
+    footerCopy: '© 2024 FTT Interior. All Rights Reserved.',
+    footerRights: 'Thiết kế nội thất cao cấp Việt Nam',
+  },
+  en: {
+    nav0: 'Home', nav1: 'About', nav2: 'Services', nav3: 'Process', nav4: 'FAQ', nav5: 'Contact',
+    cta: 'Free Consultation',
+    heroTitle: 'Transform Your Apartment Into Luxury Living',
+    heroSub: 'Professional interior design, renovation, and furniture solutions for homeowners and investors in Vietnam.',
+    heroCta1: 'Book Free Consultation', heroCta2: 'View Projects',
+    stat1: 'Projects Completed', stat2: 'Happy Clients', stat3: 'Years Experience', stat4: 'Satisfaction Rate',
+    aboutTag: 'ABOUT US',
+    aboutTitle: 'Who We Are',
+    aboutP1: 'FTT Interior is a premium interior design company in Vietnam, primarily serving Taiwanese, Hong Kong, and overseas Chinese clients. We provide end-to-end service from design to project completion.',
+    aboutP2: 'Since 2018, we have completed over 50 luxury residential projects in Ho Chi Minh City, Hanoi, and Da Nang. We apply Taiwanese quality standards in every project we undertake in Vietnam.',
+    aboutF1: 'Chinese-language service, no language barriers', aboutF2: 'Transparent pricing, no hidden fees',
+    aboutF3: 'Premium imported materials & furniture', aboutF4: '1-year post-completion warranty',
+    aboutStat1: 'Founded', aboutStat2: 'Projects Done', aboutStat3: 'Cities Served',
+    servicesTag: 'OUR SERVICES',
+    servicesTitle: 'Our Services',
+    servicesSub: 'Comprehensive interior design and construction solutions from concept to key handover.',
+    svc1Title: 'Full Interior Design', svc1Desc: 'Complete spatial planning, style definition, and material selection to bring your ideal home to life.',
+    svc2Title: 'Construction & Renovation', svc2Desc: 'Professional construction team ensuring every detail meets the highest quality standards, delivered on time.',
+    svc3Title: 'Furniture & Styling', svc3Desc: 'Curated furniture, lighting, and décor selection to create a perfectly styled and comfortable living space.',
+    svc4Title: 'Commercial Space Design', svc4Desc: 'Office, restaurant, and retail design combining brand identity with practical functionality.',
+    svc5Title: 'Color Consultation', svc5Desc: 'Professional color planning tailored to your space characteristics and personal preferences.',
+    svc6Title: 'Smart Home Systems', svc6Desc: 'Integrated smart lighting, blinds, and security systems for a modern, comfortable living experience.',
+    svc7Title: 'Home Renovation', svc7Desc: 'Comprehensive renovation of older properties, transforming them into modern, stylish spaces.',
+    svc8Title: '3D Design & Rendering', svc8Desc: 'High-quality 3D visualizations so you can see the finished result before construction begins.',
+    whyTag: 'WHY CHOOSE US',
+    whyTitle: 'Why Choose FTT Interior?',
+    whySub: 'Six core advantages that make your Vietnam property journey smooth, secure, and worry-free.',
+    why1Title: 'We Understand You', why1Desc: 'Our team deeply understands Taiwanese quality standards and aesthetics. Full Chinese-language service with no communication barriers.',
+    why2Title: 'Transparent Pricing', why2Desc: 'All costs disclosed before contract signing, with detailed itemized estimates. Absolutely no hidden fees.',
+    why3Title: 'Premium Materials', why3Desc: 'Partnership with reputable material suppliers from Vietnam, Taiwan, and Europe, with strict quality control.',
+    why4Title: 'On-Time Delivery', why4Desc: 'Written schedule commitment with professional project management tracking to ensure timely completion.',
+    why5Title: '1-Year Warranty', why5Desc: 'Comprehensive 1-year post-handover warranty covering all construction work, with 48-hour response time.',
+    why6Title: 'Full Chinese Service', why6Desc: 'From consultation to handover, all services are delivered in Chinese — design briefs, contracts, and progress reports.',
+    portfolioTag: 'OUR WORK',
+    portfolioTitle: 'Featured Projects',
+    portfolioSub: 'Every space is an extension of your lifestyle.',
+    filterAll: 'All', filterLiving: 'Living Room', filterBedroom: 'Bedroom', filterKitchen: 'Kitchen', filterOffice: 'Office',
+    p1Name: 'Modern Living Room', p1Meta: 'Ho Chi Minh City · 2024', p2Name: 'Luxury Master Suite', p2Meta: 'Hanoi · 2023',
+    p3Name: 'European Open Kitchen', p3Meta: 'HCMC · 2024', p4Name: 'Scandinavian Apartment', p4Meta: 'Da Nang · 2023',
+    p5Name: 'Corporate Office', p5Meta: 'HCMC · 2024', p6Name: 'Japanese Zen Bedroom', p6Meta: 'Hanoi · 2023',
+    baTag: 'BEFORE & AFTER',
+    beforeAfterTitle: 'See the Transformation',
+    baSub: 'Drag the slider to witness the before and after of our professional renovation work.',
+    baBeforeLabel: 'Before', baAfterLabel: 'After',
+    processTag: 'OUR PROCESS',
+    processTitle: 'Our Process',
+    processSub: 'Eight steps ensuring a smooth, transparent, and stress-free renovation experience.',
+    proc1Title: 'Initial Consultation', proc1Desc: 'Free online consultation to understand your needs, style preferences, and budget range.',
+    proc2Title: 'Site Survey', proc2Desc: 'Our designer visits for detailed measurements and space assessment.',
+    proc3Title: 'Concept Design', proc3Desc: 'Initial design concept including floor plans, style direction, and material recommendations.',
+    proc4Title: '3D Design Confirmation', proc4Desc: 'Full 3D renders showing the finished result before construction begins.',
+    proc5Title: 'Quote & Contract', proc5Desc: 'Detailed itemized quote with transparent terms, followed by formal contract signing.',
+    proc6Title: 'Material Procurement', proc6Desc: 'Sourcing all materials and furniture to spec, ensuring quality and timely delivery.',
+    proc7Title: 'Construction Management', proc7Desc: 'Expert construction team with continuous supervision and daily progress updates.',
+    proc8Title: 'Handover & Warranty', proc8Desc: 'Full inspection, project handover, and commencement of 1-year warranty period.',
+    videoTag: 'VIDEO',
+    videoTitle: 'Discover Our Craftsmanship',
+    videoSub: "Watch our construction process and completed project videos to see FTT Interior's professional quality firsthand.",
+    reviewsTag: 'TESTIMONIALS',
+    reviewsTitle: 'Client Reviews',
+    review1Text: "I entrusted FTT Interior to renovate my Ho Chi Minh City apartment remotely from Taiwan. The entire experience exceeded expectations. The designer not only understood my vision but suggested brilliant ideas I hadn't considered. Most importantly, everything was in Chinese — no language stress at all. The finished result makes me eager to come back every time!",
+    review1Name: 'Mr. Lin', review1Role: 'Taiwanese Investor · Ho Chi Minh City',
+    review2Text: "I had an old apartment in Hanoi needing renovation, and I was worried about not being able to supervise in person. FTT Interior sent daily construction progress photos. The project manager's professionalism was outstanding. The result matched the design drawings perfectly — quality exceeded expectations. Highly recommended!",
+    review2Name: 'Ms. Chen', review2Role: 'Taiwanese Business Owner · Hanoi',
+    review3Text: 'Assigned to Vietnam for work, I needed to quickly set up a comfortable home. FTT Interior completed everything from design to handover in just 45 days — impressive efficiency. The overall quality is excellent, meeting Taiwanese standards. Friends who visit are always impressed. Strongly recommend to all Taiwanese in Vietnam!',
+    review3Name: 'Mr. Wang', review3Role: 'Corporate Executive · Ho Chi Minh City',
+    faqTag: 'FAQ',
+    faqTitle: 'Frequently Asked Questions',
+    faqSub: 'Everything you need to know about our services.',
+    faq1Q: "I'm in Taiwan — how do I commission a renovation?", faq1A: "You don't need to be in Vietnam at all. We offer full remote service: online consultations (LINE/Zoom/WeChat), electronic contract signing, and daily construction progress photos and videos.",
+    faq2Q: 'How long does the process take from design to completion?', faq2A: 'A typical residential project (50-100 m²) takes 45-60 working days from contract signing to handover. Larger or more complex projects may require 90-120 days. We provide a detailed schedule before signing.',
+    faq3Q: 'How much does the service cost? Does it include furniture?', faq3A: 'Basic design and construction costs range from 8-25 million VND/m² depending on size and complexity (approx. $3-10 USD/m²). Furniture is quoted separately and adjustable to budget. Free estimates available.',
+    faq4Q: 'What is the quality of materials used?', faq4A: 'We partner with reputable material brands from Vietnam, Taiwan, and Italy. Clients can personally select material samples during the design confirmation phase. All materials come with manufacturer quality certificates.',
+    faq5Q: 'Is there a warranty after project handover?', faq5A: 'Yes, we provide a comprehensive 1-year warranty covering all construction work including carpentry, painting, plumbing, electrical, and tiling. Our maintenance team responds within 48 hours during the warranty period.',
+    faq6Q: 'Do you provide design drawings and 3D renderings?', faq6A: 'Yes. Our service includes complete design drawings (floor plans, elevations, construction details) and high-quality 3D renderings. Clients confirm the design before signing the construction contract.',
+    contactTag: 'CONTACT',
+    contactTitle: 'Book Free Consultation',
+    contactSub: "Leave your contact details and we'll get back to you within 24 hours.",
+    contactInfoTitle: 'Get in Touch',
+    contactInfoDesc: 'Whatever questions or ideas you have, our professional consulting team is ready to help.',
+    contactPhone: 'Phone / WhatsApp', contactEmail: 'Email', contactAddr: 'Service Areas', contactAddrVal: 'HCMC · Hanoi · Da Nang',
+    formName: 'Full Name *', formNamePh: 'Enter your name',
+    formPhone: 'Phone *', formPhonePh: '+84 or +886...',
+    formEmail: 'Email *', formEmailPh: 'your@email.com',
+    formLine: 'LINE / WeChat ID', formLinePh: '@lineID or WeChat',
+    formBudget: 'Budget Range *', formBudgetPh: 'Select budget range',
+    formArea: 'Space Area', formAreaPh: 'Select space size',
+    formService: 'Service Needed', formServicePh: 'Select service type',
+    formMessage: 'Additional Notes', formMessagePh: 'Describe your design needs, style preferences, or any questions...',
+    formSubmit: 'Submit Consultation Request →',
+    formSuccess: '✓ Thank you! We will contact you within 24 hours.',
+    budget1: 'USD 500 – 1,000', budget2: 'USD 1,000 – 2,000', budget3: 'USD 2,000 – 5,000', budget4: 'USD 5,000+',
+    errRequired: 'This field is required', errPhone: 'Please enter a valid phone number', errEmail: 'Please enter a valid email',
+    ctaTag: 'GET STARTED',
+    ctaBannerTitle: 'Ready to Upgrade Your Living Space?',
+    ctaBannerSub: 'Book a free consultation and let us create the perfect interior design solution tailored just for you.',
+    ctaBannerBtn: 'Contact Us Now',
+    footerDesc: 'FTT Interior specializes in premium interior design for Taiwanese and overseas Chinese clients in Vietnam, applying Taiwanese quality standards in every project.',
+    footerNav: 'Navigation', footerServices: 'Services', footerContact: 'Contact Info',
+    footerAddr: 'HCMC · Hanoi · Da Nang',
+    footerCopy: '© 2024 FTT Interior. All Rights Reserved.',
+    footerRights: 'Luxury Interior Design Vietnam',
+  }
+};
+
+let currentLang = 'zh';
+
+function switchLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang === 'zh' ? 'zh-TW' : lang === 'vi' ? 'vi' : 'en';
+  const t = translations[lang];
+
+  // Update all data-i18n elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.textContent = t[key];
+  });
+
+  // Update placeholders
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph');
+    if (t[key] !== undefined) el.placeholder = t[key];
+  });
+
+  // Update select options
+  document.querySelectorAll('select option[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.textContent = t[key];
+  });
+
+  // Update lang buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('onclick').includes(`'${lang}'`));
+  });
+}
+
+// ===== HEADER SCROLL =====
+window.addEventListener('scroll', () => {
+  const header = document.getElementById('header');
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ===== HERO BG PARALLAX =====
+window.addEventListener('load', () => {
+  document.getElementById('hero-bg').classList.add('loaded');
+});
+
+// ===== MOBILE NAV =====
+function toggleMobileNav() {
+  document.getElementById('mobile-nav').classList.toggle('open');
+}
+
+// ===== FAQ ACCORDION =====
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ===== PORTFOLIO FILTER =====
+function filterPortfolio(btn, filter) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const grid = document.querySelector('.portfolio-grid');
+  grid.style.transition = 'opacity 0.25s ease';
+  grid.style.opacity = '0';
+  setTimeout(() => {
+    document.querySelectorAll('.portfolio-item').forEach(item => {
+      item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+    });
+    grid.style.opacity = '1';
+  }, 260);
+}
+
+// ===== BEFORE/AFTER SLIDER =====
+(function() {
+  const slider = document.getElementById('ba-slider');
+  const after = document.getElementById('ba-after');
+  const handle = document.getElementById('ba-handle');
+  let dragging = false;
+
+  function setPosition(x) {
+    const rect = slider.getBoundingClientRect();
+    let pct = ((x - rect.left) / rect.width) * 100;
+    pct = Math.max(5, Math.min(95, pct));
+    after.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+    handle.style.left = pct + '%';
+  }
+
+  slider.addEventListener('mousedown', e => { dragging = true; setPosition(e.clientX); });
+  slider.addEventListener('touchstart', e => { dragging = true; setPosition(e.touches[0].clientX); }, { passive: true });
+  window.addEventListener('mousemove', e => { if (dragging) setPosition(e.clientX); });
+  window.addEventListener('touchmove', e => { if (dragging) setPosition(e.touches[0].clientX); }, { passive: true });
+  window.addEventListener('mouseup', () => dragging = false);
+  window.addEventListener('touchend', () => dragging = false);
+})();
+
+// ===== VIDEO MODAL =====
+function openVideoModal() {
+  const modal = document.getElementById('video-modal');
+  document.getElementById('video-iframe').src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal(e) {
+  if (!e || e.target === document.getElementById('video-modal') || !e.target.closest('.video-modal-inner')) {
+    document.getElementById('video-modal').classList.remove('active');
+    document.getElementById('video-iframe').src = '';
+    document.body.style.overflow = '';
+  }
+}
+
+// ===== TESTIMONIALS SLIDER =====
+let currentSlide = 0;
+const totalSlides = 3;
+let autoSlideTimer;
+
+function slideTo(idx) {
+  if (idx < 0) idx = totalSlides - 1;
+  if (idx >= totalSlides) idx = 0;
+  currentSlide = idx;
+  document.getElementById('testimonials-track').style.transform = `translateX(-${idx * 100}%)`;
+  document.querySelectorAll('.slider-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === idx);
+  });
+  resetAutoSlide();
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideTimer);
+  autoSlideTimer = setInterval(() => slideTo(currentSlide + 1), 5000);
+}
+
+resetAutoSlide();
+
+// ===== COUNTER ANIMATION =====
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 2000;
+  const step = target / (duration / 16);
+  let current = 0;
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = Math.floor(current);
+  }, 16);
+}
+
+// ===== AOS (Animate on Scroll) =====
+const aosObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('aos-animate');
+      aosObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('[data-aos]').forEach(el => aosObserver.observe(el));
+
+// ===== Counter Trigger =====
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.counter').forEach(animateCounter);
+      statsObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+const statsSection = document.getElementById('stats');
+if (statsSection) statsObserver.observe(statsSection);
+
+// ===== FORM VALIDATION =====
+function handleSubmit(e) {
+  e.preventDefault();
+  let valid = true;
+
+  const name = document.getElementById('f-name');
+  const phone = document.getElementById('f-phone');
+  const email = document.getElementById('f-email');
+  const budget = document.getElementById('f-budget');
+
+  const clearError = (input, errId) => {
+    input.classList.remove('error');
+    document.getElementById(errId).classList.remove('visible');
+  };
+  const showError = (input, errId) => {
+    input.classList.add('error');
+    document.getElementById(errId).classList.add('visible');
+    valid = false;
+  };
+
+  clearError(name, 'err-name');
+  clearError(phone, 'err-phone');
+  clearError(email, 'err-email');
+  clearError(budget, 'err-budget');
+
+  if (!name.value.trim()) showError(name, 'err-name');
+  if (!phone.value.trim() || !/^[\+\d][\d\s\-]{7,}$/.test(phone.value.trim())) showError(phone, 'err-phone');
+  if (!email.value.trim() || !/^[^@]+@[^@]+\.[^@]+$/.test(email.value.trim())) showError(email, 'err-email');
+  if (!budget.value) showError(budget, 'err-budget');
+
+  if (valid) {
+    const btn = e.target.querySelector('.form-submit');
+    btn.disabled = true;
+    btn.textContent = '...';
+    setTimeout(() => {
+      document.getElementById('contact-form').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+      const t = translations[currentLang];
+      document.getElementById('form-success').textContent = t.formSuccess;
+    }, 1000);
+  }
+}
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+    }
+  });
+});
+
+// Init language
+switchLang('zh');
+</script>
+</body>
+</html>
