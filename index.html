@@ -3218,7 +3218,7 @@ const formData = {
 
 fetch(WEB_APP_URL, {
     method: "POST",
-    headers: {
+    mode: "no-cors",
         "Content-Type": "application/json"
     },
     body: JSON.stringify(formData)
