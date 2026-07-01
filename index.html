@@ -2288,7 +2288,13 @@ select.form-control { cursor: pointer; }
 <div class="video-modal" id="video-modal" onclick="closeVideoModal(event)">
   <div class="video-modal-inner">
     <button class="video-close" onclick="closeVideoModal()">✕</button>
-    <iframe id="video-iframe" src="" allowfullscreen allow="autoplay"></iframe>
+    <iframe
+    id="video-iframe"
+    src=""
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe>
   </div>
 </div>
 
@@ -3078,7 +3084,7 @@ function filterPortfolio(btn, filter) {
 // ===== VIDEO MODAL =====
 function openVideoModal() {
   const modal = document.getElementById('video-modal');
-  document.getElementById('video-iframe').src = 'https://www.youtube.com/watch?v=-ds5PUsxImY';
+  document.getElementById('video-iframe').src = 'https://www.youtube.com/embed/-ds5PUsxImY?autoplay=1';
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
