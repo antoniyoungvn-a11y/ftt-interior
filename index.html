@@ -3078,7 +3078,7 @@ function filterPortfolio(btn, filter) {
 // ===== VIDEO MODAL =====
 function openVideoModal() {
   const modal = document.getElementById('video-modal');
-  document.getElementById('video-iframe').src = 'https://youtu.be/-ds5PUsxImY';
+  document.getElementById('video-iframe').src = 'https://www.youtube.com/watch?v=-ds5PUsxImY';
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -3189,6 +3189,26 @@ function handleSubmit(e) {
     const btn = e.target.querySelector('.form-submit');
     btn.disabled = true;
     btn.textContent = '...';
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwG57yQvVjZ6eqaxlz8eI0omUhnHUsetPDG5_VvYHORADE99xEdJy3vtbSoPZcdnTw/exec";
+
+const formData = {
+    name: document.getElementById('f-name').value,
+    phone: document.getElementById('f-phone').value,
+    email: document.getElementById('f-email').value,
+    line: document.getElementById('f-line').value,
+    budget: document.getElementById('f-budget').value,
+    area: document.getElementById('f-area').value,
+    service: document.getElementById('f-service').value,
+    message: document.getElementById('f-message').value
+};
+
+fetch(WEB_APP_URL, {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+});
     setTimeout(() => {
       document.getElementById('contact-form').style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
